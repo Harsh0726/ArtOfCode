@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtOfCode/Register</title>
+    <style>
+        div {
+            background-image: url(images/back.jpeg) ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 1375pt, 770pt;
+            height: 770pt;
+            width: 1375pt;
+            padding-top: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+            display:inline-block;
+
+        }
+        form {
+            margin: auto;
+            text-align: center;
+            background-image: linear-gradient(#232399, #8CABFF);
+            border-style: solid, #6C8EBF, 1pt;
+            opacity: 100%;
+            background-repeat: no-repeat;
+            border-radius: 12%;
+            height: 660pt;
+            width: 688.93pt;
+           
+        }
+        img {
+            padding-top: 50px;
+            position: bottom;
+
+        }
+        #Name {
+            font-size:30pt ;
+            
+            font-weight: bold;
+            opacity: 100%;
+            color: #ffffff;
+
+        }
+        label {
+            background-color: black;
+            color: #ffffff;
+            display: inline-flex;
+            font-size: 12pt;
+            opacity: 100%;
+            vertical-align: 540%;
+            width: 200pt;
+            height: 40pt;
+            border-radius: 12%;
+            margin-right: 50px;
+            text-align: center;
+            
+
+        }
+        input {
+            
+            color: black;
+            
+            font-size: 12pt;
+            opacity: 100%;
+            vertical-align: 540%;
+            width: 200pt;
+            height: 40pt;
+            border-radius: 12%;
+            margin-left: 50px;
+            text-align: center;
+
+        }
+        button {
+
+        }
+        p {
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <img src="images/profile-icon.png" alt="profile" width="75.73 pt" height="60 pt">
+            <p id="Name">Register Here</p>
+            <label type="text" name="firstname">First Name</label>
+            <input type="text" name="firstname" placeholder="FName">
+        </br>
+            <label type="text" name="lastname">Last Name</label>
+            <input type="text" name="lastname" placeholder="LName">
+        </br>
+            <label type="email" name="email">Email Address</label>
+            <input type="email" name="email" placeholder="artofcode@gmail.com">
+        </br>
+            <label type="password" name="password">Choose password</label>
+            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        </br>
+            <label type="password" name="confirmpassword">Confirm password</label>
+            <input type="password" name="confirmpassword" placeholder="Retype Password">
+        </br>
+            <button type="submit" name="submit" value="registration">Submit</button>
+            
+            <p>Already have an account? <a href="UserLogging.html">Sign in</a></p>
+    </form>
+     
+    </div>
+</body>
+</html>
