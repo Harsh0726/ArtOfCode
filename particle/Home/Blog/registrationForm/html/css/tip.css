@@ -75,4 +75,9 @@ h1 {
 #toggle{
   background-color: #1161ee;
   border-color:  #28bed8;
+  padding: 10px 100px;
+  font-weight: bold;
+  text-transform:uppercase;
+  border-radius:25px;
+  
 }
