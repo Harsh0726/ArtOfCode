@@ -52,6 +52,7 @@ a{color:inherit;text-decoration:none}
 .login-form .group .label,
 .login-form .group .button{
 	text-transform:uppercase;
+	text-align: left;
 }
 .login-html .tab{
 	font-size:22px;
@@ -168,6 +169,10 @@ a{color:inherit;text-decoration:none}
 
 input { 
 font-family: 'FontAwesome'; }
+
+#animation {
+	text-align: center;
+}
 
 
 
