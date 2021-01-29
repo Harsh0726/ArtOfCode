@@ -210,7 +210,7 @@
      </section>
 
 <!-- registrationForm -->
-<div class="popup">
+<div class="popup" id="modal">
     <div class="login-wrap">
         
         <div class="login-html">
@@ -339,8 +339,21 @@
         })
     
         document.querySelector(".close").addEventListener("click", function(){
-            document.querySelector(".popup").style.display ="none"
+            document.querySelector(".popup").style.display ="none";
         })
+
+    </script>
+    <script>
+        window.addEventListener('mouseup',function(event){
+            var box = document.getElementById('modal')
+            if (event.target != box) {
+                document.querySelector(".popup").style.display ="flex";
+            }
+            else{
+                document.querySelector(".popup").style.display ="none";
+            }
+            
+        });
     </script>
     
         <!-- Optional JavaScript -->
