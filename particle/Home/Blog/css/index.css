@@ -60,8 +60,8 @@ nav img {
 
 .pp{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 105%;
+    left: 30%;
     transform:translate(-50%, -50%);
     text-align: center;
 }
@@ -73,8 +73,8 @@ nav img {
 
 }
 
-.button {
-    background: #fff;
+#signup {
+    background:#007bff;
     padding:10px 15px;
     color:#34495e;
     font-weight: bolder;
@@ -85,37 +85,38 @@ nav img {
     margin-top:25px;
     text-decoration: none;
     transition: 0.4s;
+    position: relative;
     
 }
 
-.button:hover {
+#signup:hover {
     background-color: #34495e;
     color: #fff;
 
 }
 
 .popup {
-    background:rgba(0,0,0,0.6);
+    background:rgba(0,0,0,0.1);
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.pp{
-   
+/* .pp{
+  
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-    background-size: auto;
+    /* background-size: auto; */
     
     font:600 16px/18px 'Open Sans',sans-serif;
-    
-}
+     
+}  */
 
 /* .popup-content{
     height: 250px;
@@ -135,7 +136,6 @@ nav img {
 } */
 .close {
     position: absolute;
-    top: -110px;
     right: 10px;
     background-color: #fff;
     height:30px;

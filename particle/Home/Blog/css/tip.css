@@ -6,7 +6,7 @@ h1 {
 .circle-loader {
   margin-bottom: 3.5em;
   border: 2px solid rgba(0, 0, 0, 0.2);
-  border-left-color: #1161ee;
+  border-left-color: #336ac9;
   animation: loader-spin 1.2s infinite linear;
   position: relative;
   display: inline-block;
@@ -35,8 +35,8 @@ h1 {
   height: 3.5em;
   width: 1.75em;
   transform-origin: left top;
-  border-right: 3px solid #1161ee;
-  border-top: 3px solid #1161ee;
+  border-right: 3px solid #28bed8;
+  border-top: 3px solid #28bed8;
   content: '';
   left: 1.75em;
   top: 3.5em;
