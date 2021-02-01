@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-header('location;login.php');
+header('location:login.php');
 
 $con = mysqli_connect('localhost','root','');
 
@@ -27,7 +27,8 @@ if($p1==$p2){
     else {
         $reg = "insert into usertable(name,email,password_1,password_2) values('$un','$em','$p1','$p2')";
         mysqli_query($con, $reg);
-        echo "Registration Successful"; 
+        // echo "Registration Successful"; 
+        header('location:success.php');
     }
 }
 else{
