@@ -247,7 +247,7 @@
                     
                     <!-- checkbox -->
                     <input type="checkbox" id="checkbox"/>
-          <label for="checkbox" ><span class="ui"></span>Keep me signed in</label>
+                     <label for="checkbox"><span class="ui" style="color:white">Keep me signed in</span></label>
           
 
                     <!-- Sign In button -->
@@ -258,9 +258,8 @@
 
                     <div class="hr1"></div>
                     <div class="foot-lnk1">
-                        <a href="#forgot">Forgot Password?</a>
+                         <a href="forgot_password.php">Forgot Password?</a>
                     </div>
-
             
                 </div>
                 </div>
