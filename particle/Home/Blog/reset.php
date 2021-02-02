@@ -111,7 +111,7 @@ if(isset($_POST['submit'])){
     
   </form>
    
-  <p>Did you remember? <a href="login.php">Sign In</a></p>
+  <p>Did you remember? <a href="home.php">Sign In</a></p>
   
 </div>
 </div>
