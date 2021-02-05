@@ -273,19 +273,39 @@
                 <div class="sign-up-htm">
                     <div class="group">
                         <label for="user" class="label">Username</label>
-                        <input id="user" type="text" name="name" class="input" placeholder="Name" required>
+                        <input id="user" type="text" name="name" class="input" placeholder="Name" autofocus>
+                        <?php
+                            if (isset($nameerror) & !empty($nameerror)) {
+                                echo "<span class='alert alert-danger'>".$nameerror."</span>";
+                            }
+                        ?>
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Email Address</label>
-                        <input id="pass" type="email" name="email" class="input" placeholder="artofcode@gmail.com" required>
+                        <input id="pass" type="email" name="email" class="input" placeholder="artofcode@gmail.com" autofocus>
+                        <?php
+                            if (isset($emailerror) & !empty($emailerror)) {
+                                echo "<span class='alert alert-danger'>".$emailerror."</span>";
+                            }
+                        ?>
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Password</label>
-                        <input id="pass" type="password" name="password_1" class="input" data-type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <input id="pass" type="password" name="password_1" class="input" data-type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" autofocus>
+                        <?php
+                            if (isset($password_1error) & !empty($password_1error)) {
+                                echo "<span class='alert alert-danger'>".$password_1error."</span>";
+                            }
+                        ?>
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Confirm Password</label>
-                        <input id="pass" type="password" class="input" name="password_2" data-type="password" placeholder="Retype Password" required>
+                        <input id="pass" type="password" class="input" name="password_2" data-type="password" placeholder="Retype Password" autofocus>
+                        <?php
+                            if (isset($password_2error) & !empty($passwoed_2error)) {
+                                echo "<span class='alert alert-danger'>".$password_2error."</span>";
+                            }
+                        ?>
                     </div>
                     
                     <div id="animation">
@@ -315,6 +335,17 @@
                     <div class="foot-lnk">
                         <label for="tab-1">Already Member?</a>
                     </div>
+
+                    <?php
+                        if(!empty($messages)){
+                            echo "<div class='alert alert-sucess'>";
+
+                            foreach ($messages as $messages) {
+                                echo "<span class = 'glyphicon glyphicon-ok'></span>&nbsp; ".$message."<br>";
+                            }
+                            echo "</div>";
+                        }
+                    ?>
                 </div>  
 
             </div>
@@ -363,5 +394,33 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+        
+
 </body>
 </html>
+
+<?php
+
+if (isset($__POST) & !empty($__POST)) {
+    print_r($__POST);
+
+    //PHP Form Validations
+    if(empty($__POST['name'])){
+        $nameerror = "User Name Field is Required";
+    }
+    if(empty($__POST['emial'])){
+        $emailerror = "Email Field is Required";
+    }
+    if(empty($__POST['password_1'])){
+        $password_1error = "Password Field is Required";
+    }
+    if(empty($__POST['password_2'])){
+        $password_2error = "Please confirm the password";
+    }
+    if (empty($nameerror && $emailerror && $password_1error && $password_2error)) {
+        
+        $messages[] = "No erros in the Form";
+    }
+}
+
+?>
