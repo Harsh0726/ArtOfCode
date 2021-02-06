@@ -234,14 +234,14 @@
                     <div class="group">
                         <label for="user" class="label">User Name</label>
                         <input type="text" name="name" class="input" placeholder= " &#61447  Username" required>
-                         <!-- <input id="user" type="text" placeholder= " &#61447  artofcode@gmail.com" class="input" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>   -->
-                         <!-- <small id="emailHelp" class="form-text text-muted"> We"ll never share your email with anyone else.</small> -->
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/709/709699.svg" alt="user" class="imguser">
                     </div>
 
                     <!-- Input Password -->
                     <div class="group">
                         <label for="pass" class="label">Password</label>
-                        <input id="pass" type="password" class="input"  data-type="password" placeholder= " &#xf084  password" name="password_1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <input id="pass" type="password" class="input"  data-type="password" placeholder= " &#xf084   Password" name="password_1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/1828/1828471.svg" alt="lock" class="imgpass">
                     </div>
 
                     
