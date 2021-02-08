@@ -308,28 +308,29 @@
                         ?>
                     </div>
                     
-                    <div id="animation">
+                    <!-- <div id="animation"> -->
                         <div class="group">
-                            <p><input type="submit" class="btn-success" value="Sign Up" id="toggle"></p>
+                            <p><input type="submit" class="button" value="Sign Up" id="submit"></p>
                         </div>
+                        <!-- <div class="group">
+                        <input type="submit" class="button" id="submit" value="Sign In" onclick="checkEmail();">
+                    </div> -->
 
                         <!--animation-->
-                        <!-- 
-
-                            <p></p><button value="submit" id="toggle" type="button" class="btn btn-success">Submited</button></p>-->
+                        
         
                             <!--Animation -circle loader-->
-                            <div class="circle-loader">
+                            <!-- <div class="circle-loader">
         
                                 <div class="checkmark draw"></div>
                             
-                            </div>
+                            </div> -->
         
                         <!-- Animation script -->
-                          <script src="js/jquery.min.js"></script>
+                          <!-- <script src="js/jquery.min.js"></script>
                           <script src="js/tip.js"></script>
     
-                    </div> 
+                    </div>  -->
 
                     <div class="hr2"></div>
                     <div class="foot-lnk">
